@@ -2,11 +2,11 @@
 
 Demo-ympäristö: **system.softagram.com** → Yritys: **Demonstration Oy**
 
-Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinkulun (~35 min). Tarinat 8–12 ovat lisädemoja jotka voi näyttää ad hoc tarpeen mukaan (~15 min).
+Demon kokonaiskesto: ~60 minuuttia. Tarinat 1–8 muodostavat yhtenäisen ydinkulun (~45 min). Tarinat 9–13 ovat lisädemoja jotka voi näyttää ad hoc tarpeen mukaan (~15 min).
 
 ---
 
-## YDINDEMOT (~35 min)
+## YDINDEMOT (~45 min)
 
 ---
 
@@ -159,12 +159,12 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 2. **Klikkaa Jämsän sairaala -projektiin**
    - Näytä tehtäväluettelo vaiheineen:
-     - ✅ Asiakasvaatimusten katselmointi — Valmis
-     - ✅ Sähkösuunnittelu — Valmis
-     - 🔄 Komponenttien hankinta — Käynnissä
-     - ⏳ Keskuksen kokoonpano — Suunniteltu
-     - ⏳ Tehdashyväksyntätesti (FAT) — Suunniteltu
-     - ⏳ Toimitus ja käyttöönotto — Suunniteltu
+     - Asiakasvaatimusten katselmointi — Valmis
+     - Sähkösuunnittelu — Valmis
+     - Komponenttien hankinta — Käynnissä
+     - Keskuksen kokoonpano — Suunniteltu
+     - Tehdashyväksyntätesti (FAT) — Suunniteltu
+     - Toimitus ja käyttöönotto — Suunniteltu
    - *"Jokainen tiimin jäsen näkee tarkalleen missä projekti on menossa."*
 
 3. **Avaa tehtävä "Sähkösuunnittelu"** → **Tuntiseuranta-välilehti**
@@ -187,7 +187,54 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 6: Moniprojektinäkymä ja liiketoiminnan kokonaiskuva (3 min)
+## Tarina 6: Työntekijät, osaaminen ja poissaolot (5 min)
+
+**Valmistelu:** Avaa Työntekijät → Työntekijät
+
+**Ongelmat:**
+- *"Kukaan ei tiedä kuka osaa korvata sairauslomalaisen."*
+- *"Poissaolo tulee yllätyksenä ja tuotanto seisoo."*
+
+**Kerronta:** *"Kun avainhenkilö sairastuu tai lähtee lomalle, pitää tietää heti kuka osaa tehdä samat työt. Katsotaan miten Odoo hoitaa tämän."*
+
+### Vaiheet
+
+1. **Näytä työntekijäluettelo** — 150 työntekijää, 10 osastoa
+   - Rajaa: Operations (22 hlö) tai Engineering (8 hlö)
+   - *"Kaikki tuotantohenkilöstö ja heidän osastonsa yhdessä paikassa."*
+
+2. **Avaa tuotantotyöntekijä** — esim. **Poul Søndergaard** (Operations)
+   - Navigoi **Resume / Skills** -välilehdelle
+   - Näytä taidot tasoineen:
+     - Keskusasennus — **Asiantuntija**
+     - Kaapelointi & kytkentä — **Asiantuntija**
+     - Kehysasennus & kotelointi — **Edistynyt**
+   - *"Poul on meidän kokeneimpia keskusasentajia. Mutta hän on juuri nyt sairauslomalla..."*
+
+3. **Avaa Poissaolot** (Poissaolot → Hallintapaneeli tai suoraan työntekijän kautta)
+   - Näytä nykyiset poissaolot:
+     - **Poul Søndergaard** — sairausloma (tänään, lääkärintodistus)
+     - **Marita Kankaanpää** — koronakaranteeni (tällä viikolla)
+   - Tulevat lomat:
+     - **Antero Häkkinen-Nurminen** (pääsuunnittelija) — hiihtoloma ensi viikolla
+     - **Prof. Anne Jensen** (pääsuunnittelija) — vuosiloma
+     - **Dr. Johnnie Lauridsen** (automaatio-asiantuntija) — vuosiloma
+   - *"Kaksi avainhenkilöä poissa juuri nyt, ja ensi viikolla suunnittelupuolelta lähtee kolme lomalle. Miten tämä vaikuttaa tuotantoon?"*
+
+4. **Palaa työntekijälistaan → hae osaajaa**
+   - Avaa **Malin Åberg** (Testing & QC) — Skills: Eristysvastusmittaus **Asiantuntija**, Toimintakoe (FAT) **Asiantuntija**
+   - Avaa **Henrik Karhunen** — Skills: Keskusasennus **Edistynyt**, DIN-kisko-asennus **Asiantuntija**
+   - *"Skills-näkymästä näkee heti: Henrik voi hoitaa Poulin keskusasennustyöt, ja Malin kattaa testausvaiheen."*
+
+5. **Näytä sairauslomahistoria**
+   - Poul Søndergaardilla 2 sairauslomaa kuukauden sisällä (selkävaiva + nykyinen)
+   - *"Järjestelmä näyttää poissaolohistorian — jos sama henkilö on toistuvasti poissa, se näkyy datasta. Voidaan reagoida ajoissa."*
+
+6. **Avainviesti:** *"Kun avainhenkilö sairastuu, ette joudu soittelemaan ympäriinsä kysyäksenne 'kuka osaa tämän'. Osaamisprofiili kertoo heti kuka voi korvata — ja poissaolonäkymä varoittaa etukäteen tulevista kapasiteettiongelmista."*
+
+---
+
+## Tarina 7: Moniprojektinäkymä ja liiketoiminnan kokonaiskuva (3 min)
 
 **Valmistelu:** Avaa Valmistus → Valmistustilaukset (listanäkymä)
 
@@ -215,30 +262,32 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 7: Tekoälyavustaja valmistuksessa (5 min)
+## Tarina 8: Tekoälyavustajat (5 min)
 
-**Valmistelu:** Avaa Valmistus → AI Assistant
+**Valmistelu:** Avaa Valmistus → AI Valmistusavustaja
 
-**Kerronta:** *"Ja nyt jotain aidosti uutta — olemme integroineet Googlen Gemini-tekoälyn suoraan Odooseen. Tällä tekoälyavustajalla on reaaliaikainen pääsy kaikkeen valmistusdataanne."*
+**Kerronta:** *"Ja nyt jotain aidosti uutta — olemme integroineet Googlen Gemini-tekoälyn suoraan Odooseen. Meillä on kolme eri tekoälyavustajaa, jotka ymmärtävät eri osa-alueet teidän liiketoiminnastanne."*
 
 ### Vaiheet
 
-1. **Avaa Valmistus → AI Assistant** (avautuu dialogi)
+1. **Avaa Valmistus → AI Valmistusavustaja** (avautuu dialogi)
    - *"Tämä on räätälöity moduli, jonka Softagram on rakentanut — se kytkee Odoon valmistusdatan suoraan Googlen Gemini-tekoälyyn."*
 
-2. **Kysy:** "Give me an overview of our current manufacturing status. What's the biggest risk?"
-   - Tekoäly vastaa kaikilla 4 valmistustilauksella, niiden tiloilla, takarajoilla ja tunnistaa riskit
-   - *"Tekoäly näkee kaikki valmistustilauksenne, projektinne ja hankintanne — ja tunnistaa mihin pitää kiinnittää huomiota."*
+2. **Kysy:** "Mikä on tuotantomme tilanne? Missä on suurin riski?"
+   - Tekoäly vastaa suomeksi kaikilla 4 valmistustilauksella, niiden tiloilla ja tunnistaa riskit
+   - *"Tekoäly näkee kaikki valmistustilauksenne, projektinne ja hankintanne — ja vastaa suomeksi."*
 
-3. **Kysy:** "Compare the material costs and margins of our Hospital ICU power center versus the Childcare Facility power center."
-   - Tekoäly hakee tuoterakennekustannukset ja myyntihinnat, laskee katteet, ehdottaa optimointia
-   - *"Tuoterakenteiden ja Exceleiden manuaalisen tutkimisen sijaan — kysykää vain tekoälyltä."*
+3. **Avaa Myynti → AI Myyntiavustaja**
+   - **Kysy:** "Mitkä ovat myyntiputkemme suurimmat mahdollisuudet ja riskit?"
+   - Tekoäly analysoi CRM-datan, tarjoukset ja tilaukset
+   - *"Myyntiavustaja ymmärtää liidejä, tarjouksia ja tilaushistoriaa."*
 
-4. **Kysy:** "What components do we need to order for our upcoming production? Which suppliers should we use?"
-   - Tekoäly viittaa ostotilauksiin ja toimittajasuhteisiin
-   - *"Tekoäly ymmärtää koko toimitusketjunne."*
+4. **Avaa AI Avustaja** (ylävalikko) → **AI Liiketoiminta-avustaja**
+   - **Kysy:** "Anna kokonaiskuva liiketoiminnastamme: myynti, tuotanto, henkilöstö, talous."
+   - Tekoäly kokoaa yhteenvedon kaikesta datasta: CRM, myynti, valmistus, projektit, taloushallinto, HR
+   - *"Tämä avustaja näkee kaiken — myynnistä valmistukseen, taloushallintoon ja henkilöstöön. Kuin olisi toimitusjohtajan oma analyytikko."*
 
-5. **Avainviesti:** *"Tämä on toiminnanohjauksen tulevaisuus — tekoäly joka ymmärtää juuri teidän liiketoimintadataanne. Ei geneeristä ChatGPT:tä, vaan tekoäly joka on kytketty TEIDÄN tuotantotilauksiin, TEIDÄN tuoterakenteisiin, TEIDÄN projekteihin. Ja tämä pyörii avoimen lähdekoodin Community-versiolla."*
+5. **Avainviesti:** *"Kolme tekoälyavustajaa, jotka ymmärtävät juuri TEIDÄN dataa: valmistuspäällikkö saa tuotantonäkymän, myyntijohtaja myyntinäkymän, ja toimitusjohtaja kokonaiskuvan. Ei geneeristä ChatGPT:tä — vaan tekoäly joka on kytketty TEIDÄN järjestelmään. Ja tämä pyörii avoimen lähdekoodin Community-versiolla."*
 
 ---
 
@@ -248,7 +297,7 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 8: Verkkokauppa ja nettisivut (4 min)
+## Tarina 9: Verkkokauppa ja nettisivut (4 min)
 
 **Valmistelu:** Avaa system.softagram.com/shop uudessa välilehdessä
 
@@ -276,7 +325,7 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 9: Sähköpostimarkkinointi (3 min)
+## Tarina 10: Sähköpostimarkkinointi (3 min)
 
 **Valmistelu:** Avaa Sähköpostimarkkinointi → Postitukset
 
@@ -307,7 +356,7 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 10: Kassapääte — myymälä ja komponenttimyynti (2 min)
+## Tarina 11: Kassapääte — myymälä ja komponenttimyynti (2 min)
 
 **Valmistelu:** Avaa Kassapääte (Point of Sale)
 
@@ -329,7 +378,7 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 11: Laskutus ja rahatilanne (3 min)
+## Tarina 12: Laskutus ja rahatilanne (3 min)
 
 **Valmistelu:** Avaa Laskutus → Asiakaslaskut
 
@@ -357,7 +406,7 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 
 ---
 
-## Tarina 12: Kulujen hallinta ja ajoneuvojen seuranta (2 min)
+## Tarina 13: Kulujen hallinta ja ajoneuvojen seuranta (2 min)
 
 **Valmistelu:** Avaa Kulut → Omat kulut
 
@@ -389,34 +438,19 @@ Demon kokonaiskesto: ~50 minuuttia. Tarinat 1–7 muodostavat yhtenäisen ydinku
 3. **Valmistus** → Tuoterakenteet jokaisella komponentilla, työvaiheet työkustannuksineen
 4. **Hankinta** → Toimittajahallinta ja automaattinen tilausmahdollisuus
 5. **Projektit + Tuntiseuranta** → Tehtäväseuranta, työtunnit ja kustannukset yhdessä
-6. **Tekoälyavustaja** → Gemini-pohjainen valmistuksen älykkyys suoraan Odoossa
+6. **Työntekijät + Osaaminen + Poissaolot** → Osaamisprofiili, korvaajien haku, kapasiteettinäkyvyys
+7. **Tekoälyavustajat** → 3 Gemini-pohjaista avustajaa: valmistus, myynti, liiketoiminta
 
 **Lisätoiminnot:**
-7. **Verkkokauppa** → Tuotekatalogi verkossa, tilaukset virtaavat suoraan Odooseen
-8. **Sähköpostimarkkinointi** → Kohdistetut kampanjat eri asiakassegmenteille
-9. **Kassapääte** → Tiskimyynti samasta varastosta
-10. **Laskutus** → Automaattinen laskutusketju, reaaliaikainen kassatilanne
-11. **Kulut ja kalusto** → Kulukorvaukset ja ajoneuvojen seuranta integroituna
+8. **Verkkokauppa** → Tuotekatalogi verkossa, tilaukset virtaavat suoraan Odooseen
+9. **Sähköpostimarkkinointi** → Kohdistetut kampanjat eri asiakassegmenteille
+10. **Kassapääte** → Tiskimyynti samasta varastosta
+11. **Laskutus** → Automaattinen laskutusketju, reaaliaikainen kassatilanne
+12. **Kulut ja kalusto** → Kulukorvaukset ja ajoneuvojen seuranta integroituna
 
 *"Kaikki tämä pyörii Odoo 19 Community Editionilla — avoin lähdekoodi, ei käyttäjäkohtaisia lisenssimaksuja. Ja tekoälyintegraatio? Se on räätälöity moduli, jonka Softagram rakentaa teille — kytketty TEIDÄN dataanne, ei geneeristä tekoälyä."*
 
 *"Keskusvalmistajalle joka tekee tilausohjautuvaa työtä, ydinviesti on tämä: jokaisella projektilla on uniikki tuoterakenne, uniikit komponentit ja uniikki kustannusrakenne. Odoo seuraa kaikkea tätä ensimmäisestä asiakaskyselystä lopputoimitukseen. Tiedätte aina katteenne — ja nyt voitte kysyä niistä tekoälyltä."*
-
----
-
-## Enterprise-ominaisuudet (mainitse tarvittaessa)
-
-Nämä ongelmat ratkeaisivat Odoo Enterprise -versiolla:
-
-| Ongelma | Enterprise-sovellus | Mitä kertoa |
-|---------|-------------------|-------------|
-| *"Laskutan kuukausisopimuksia manuaalisesti"* | **Subscriptions** | Toistuvat laskut automaattisesti — kuukausi-, vuosi-, tai räätälöidyllä jaksotuksella |
-| *"Sopimusten allekirjoitus vaatii tulostamista"* | **Sign** | Sähköinen allekirjoitus suoraan Odoosta — tarjous → allekirjoitus → vahvistus |
-| *"Työntekijät eivät tiedä mitä vaihetta työstää"* | **Shop Floor** | Tablettinäkymä tehtaalle — työntekijä näkee oman vaiheensa ja kuittaa valmiiksi |
-| *"Huoltoautot ajavat turhia reittejä"* | **Field Service** | Kenttätyöt kartalla, reittioptimointi, mobiilisovellus asentajille |
-| *"Asiakaspalvelu sähköpostissa kaaosta"* | **Helpdesk** | Tikettijärjestelmä — sähköposti → tiketti → priorisointi → vastaus SLA-ajassa |
-
-*"Nämä ovat saatavilla Enterprise-lisenssillä. Community-versio kattaa ydinliiketoiminnan, ja Enterprise laajentaa sitä näillä erikoisalueilla."*
 
 ---
 
@@ -436,9 +470,14 @@ Nämä ongelmat ratkeaisivat Odoo Enterprise -versiolla:
 | Projektit | Projekti → Projektit |
 | Tehtävät + tunnit | Projekti → Kaikki tehtävät → Tuntiseuranta-välilehti |
 | Tuntiseuranta | Tuntiseuranta → Omat tuntiseurannat |
+| Työntekijät | Työntekijät → Työntekijät |
+| Osaamisprofiilit | Työntekijät → avaa henkilö → Resume / Skills |
+| Poissaolot | Poissaolot → Hallintapaneeli |
 | Kulut | Kulut → Omat kulut |
 | Kalusto | Kalusto → Ajoneuvot |
-| Tekoälyavustaja | Valmistus → AI Assistant |
+| AI Valmistusavustaja | Valmistus → AI Valmistusavustaja |
+| AI Myyntiavustaja | Myynti → AI Myyntiavustaja |
+| AI Liiketoiminta-avustaja | AI Avustaja → AI Liiketoiminta-avustaja |
 | Verkkokauppa | /shop tai Verkkosivu → Verkkokauppa |
 | Sivueditori | Verkkosivu → avaa sivu → Muokkaa |
 | Sähköpostimarkkinointi | Sähköpostimarkkinointi → Postitukset |
